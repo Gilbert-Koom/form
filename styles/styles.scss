@@ -16,4 +16,8 @@ $fontWeights: (
     "larger":700
 );
 
-*{font-size: 16px;}
+*{font-size: 16px;};
+
+body{
+    background-color: map-get($colors, 'red' );
+}
