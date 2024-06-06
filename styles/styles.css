@@ -4,4 +4,42 @@
 
 body {
   background-color: hsl(0, 100%, 74%);
+  font-family: "Poppins";
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 37.5%;
+  background-color: white;
+}
+form input {
+  height: 40px;
+}
+
+.formContainer {
+  display: flex;
+}
+
+.content-container {
+  display: inline;
+  width: 37.5%;
+}
+.content-container .title {
+  color: white;
+  font-weight: 700;
+  font-size: 48px;
+}
+.content-container .description {
+  font-weight: 400;
+  font-size: 3px;
+}
+
+.other-container {
+  display: inline;
+}
+.other-container .subscription {
+  background-color: hsl(248, 32%, 49%);
+  width: 37.5%;
 }/*# sourceMappingURL=styles.css.map */

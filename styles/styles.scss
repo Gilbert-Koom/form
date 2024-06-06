@@ -20,4 +20,53 @@ $fontWeights: (
 
 body{
     background-color: map-get($colors, 'red' );
+    font-family: $fontFamily;
+    
+};
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 37.5%;
+    background-color: white;
+    input{
+        height: 40px;
+        
+        
+
+    }
+    
+};
+
+.formContainer{
+    display: flex;
+    
 }
+
+.content-container{
+    display: inline;
+    width: 37.5%;
+    
+    .title{
+        color: white;
+        font-weight: 700;
+        font-size: 48px;
+        
+    };
+    .description{
+        font-weight: 400;
+        font-size: 3px;
+    }
+};
+
+.other-container{
+    display: inline;
+    
+    .subscription{
+        background-color: map-get($colors, "blue" );
+        width: 37.5%;
+    }
+}
+
+
