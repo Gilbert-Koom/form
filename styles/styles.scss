@@ -1,72 +1,93 @@
-$colors: (
-    "red": hsl(0,100%,74%),
-    "green": hsl(154,59%,51%),
-    "blue": hsl(248,32%,49%),
-    "darkBlue": hsl(249,10%,26%),
-    "grayishBlue": hsl(246,25%,77%)
-
-);
-
-$fontFamily: "Poppins";
-
-$fontWeights: (
-    "regular": 400,
-    "medium":500,
-    "large":600,
-    "larger":700
-);
-
-*{font-size: 16px;};
-
-body{
-    background-color: map-get($colors, 'red' );
-    font-family: $fontFamily;
+*{
     
+    font-family: 'Poppins';
 };
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: hsl(0, 100%, 74%)
 
-form{
+};
+div{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 37.5%;
-    background-color: white;
-    input{
-        height: 40px;
-        
-        
-
-    }
+    
+    justify-content: center;
+    margin-top: 15%
     
 };
 
-.formContainer{
-    display: flex;
-    
+button{
+    width: 85%;
+    margin-left: 0;
+    height: 45px;
+    background-color: hsl(248, 32%, 59%) ;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
+form{
+    width: 100%;
 
-.content-container{
-    display: inline;
-    width: 37.5%;
-    
-    .title{
-        color: white;
-        font-weight: 700;
-        font-size: 48px;
+    input{
+        display: block;
+        width: 90%;
+        margin: auto;
+        height: 45px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: white;
+        border-radius: 5px;
+        padding-left: 20px;
+        border-color: hsl(246, 25%, 77%)
         
     };
-    .description{
-        font-weight: 400;
-        font-size: 3px;
-    }
-};
 
-.other-container{
-    display: inline;
-    
-    .subscription{
-        background-color: map-get($colors, "blue" );
-        width: 37.5%;
+    input:active{
+        border-color: hsl(246, 25%, 77%);
+    }
+    p{
+        padding-left: 30px;
+        padding-bottom: 20px;
     }
 }
 
+.form-container{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width: 600px;
+    
+    border-radius: 5px;
+    
+}
 
+input[type="text"]::placeholder{
+    margin: auto;
+}
+
+.t1{
+    margin-bottom: 0;
+}
+.t2{
+    margin-top: 0;
+}
+.main2{
+    margin-top: 0;
+    p{
+        margin-top: 4px;
+        margin-bottom: 4px;
+        margin-left: 78px;
+        color: wheat;
+    }
+}
+.title{
+    margin: 0;
+    padding: 0;
+
+    p{
+        font-weight: bold;
+        font-size: 3.6vw;
+        margin-left: 78px;
+        color: white;
+    }
+}

@@ -1,45 +1,89 @@
 * {
-  font-size: 16px;
-}
-
-body {
-  background-color: hsl(0, 100%, 74%);
   font-family: "Poppins";
 }
 
-form {
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: hsl(0, 100%, 74%);
+}
+
+div {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 37.5%;
-  background-color: white;
+  justify-content: center;
+  margin-top: 15%;
+}
+
+button {
+  width: 85%;
+  margin-left: 0;
+  height: 45px;
+  background-color: hsl(248, 32%, 59%);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 100%;
 }
 form input {
-  height: 40px;
+  display: block;
+  width: 90%;
+  margin: auto;
+  height: 45px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 5px;
+  padding-left: 20px;
+  border-color: hsl(246, 25%, 77%);
+}
+form input:active {
+  border-color: hsl(246, 25%, 77%);
+}
+form p {
+  padding-left: 30px;
+  padding-bottom: 20px;
 }
 
-.formContainer {
-  display: flex;
+.form-container {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  width: 600px;
+  border-radius: 5px;
 }
 
-.content-container {
-  display: inline;
-  width: 37.5%;
+input[type=text]::placeholder {
+  margin: auto;
 }
-.content-container .title {
+
+.t1 {
+  margin-bottom: 0;
+}
+
+.t2 {
+  margin-top: 0;
+}
+
+.main2 {
+  margin-top: 0;
+}
+.main2 p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 78px;
+  color: wheat;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+}
+.title p {
+  font-weight: bold;
+  font-size: 3.6vw;
+  margin-left: 78px;
   color: white;
-  font-weight: 700;
-  font-size: 48px;
-}
-.content-container .description {
-  font-weight: 400;
-  font-size: 3px;
-}
-
-.other-container {
-  display: inline;
-}
-.other-container .subscription {
-  background-color: hsl(248, 32%, 49%);
-  width: 37.5%;
 }/*# sourceMappingURL=styles.css.map */
